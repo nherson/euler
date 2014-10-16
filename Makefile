@@ -32,4 +32,4 @@ problem%: $(OBJ)/problem%.o
 	$(CC) $(FLAGS) $< -o $(BIN)/$@
 
 $(OBJ)/%.o: $(SRC)/%.c
-	$(CC) $(FLAGS) -c $< -o $@ -g
+	$(CC) $(FLAGS) -c $< -o $@
