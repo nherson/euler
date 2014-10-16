@@ -1,5 +1,5 @@
 #OBJS=main.o matmul.o omp_matmul_for.o omp_matmul_task.o pthread_matmul.o
-PROBLEMS=problem1 problem2 problem3 problem4
+PROBLEMS=problem1 problem2 problem3 problem4 problem5
 CC=gcc-4.9
 FLAGS=-pthread -fopenmp -O2
 # Dirs
@@ -32,4 +32,4 @@ problem%: $(OBJ)/problem%.o
 	$(CC) $(FLAGS) $< -o $(BIN)/$@
 
 $(OBJ)/%.o: $(SRC)/%.c
-	$(CC) $(FLAGS) -c $< -o $@
+	$(CC) $(FLAGS) -c $< -o $@ -g

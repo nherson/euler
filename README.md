@@ -1,4 +1,4 @@
-euler
+Euler
 =====
 
-A C library of solutions to problems on Project Euler
+A repo containing implemented solutions to problems found on Project Euler.
